@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">AppZica</string>
+    <string name="action_settings">Settings</string>
+    <string name="labelRegister">Cadastrar Ocorrência</string>
+    <string name="labelConsult">Listar Ocorrências</string>
+    <string name="title_activity_list_ocorrencia">ListOcorrenciaActivity</string>
+    <string name="title_activity_cadastrar_ocorrencia">CadastrarOcorrenciaActivity</string>
+    <string name="tirar">tirar</string>
+</resources>
