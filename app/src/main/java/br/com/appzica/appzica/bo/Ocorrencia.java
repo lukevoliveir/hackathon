@@ -19,6 +19,8 @@ public class Ocorrencia {
     public Ocorrencia(JSONObject jsonPhoto) throws JSONException {
         this.id = (String) jsonPhoto.optString("_id");
         this.description = (String) jsonPhoto.optString("description");
+        this.type = (String) jsonPhoto.optString("type");
+//        this.coordinates = (Double) jsonPhoto.optString("coordinates");
 //        this.description = (String) jsonPhoto.optString("description");
 //        this.height = (String) jsonPhoto.optString("height");
 //        this.width = (String) jsonPhoto.optString("width");
@@ -28,7 +30,7 @@ public class Ocorrencia {
 
     private String id;
 
-    private Double coordinates;
+    private Double[] coordinates;
 
     private String type;
 
@@ -54,11 +56,11 @@ public class Ocorrencia {
         this.type = type;
     }
 
-    public Double getCoordinates() {
+    public Double[] getCoordinates() {
         return coordinates;
     }
 
-    public void setCoordinates(Double coordinates) {
+    public void setCoordinates(Double[] coordinates) {
         this.coordinates = coordinates;
     }
 

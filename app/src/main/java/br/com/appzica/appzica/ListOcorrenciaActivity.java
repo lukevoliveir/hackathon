@@ -54,10 +54,10 @@ public class ListOcorrenciaActivity extends ListActivity {
         @Override
         protected void onPostExecute(Long result) {
 
-            String[] lstEstados = new String[] {" "+ ocorrencias.get(2).getId().toString() + " " + ocorrencias.get(2).getDescription().toString()};
+//            String[] lstEstados = new String[] {" "+ ocorrencias.get(2).getId().toString() + " " + ocorrencias.get(2).getDescription().toString()};
 
-
-            ListOcorrenciaAdapter = new ArrayAdapter<String>(getApplication(), android.R.layout.simple_list_item_1, lstEstados);
+            ListOcorrenciaAdapter = new OcorrenciaAdapter(ListOcorrenciaActivity.this, R.layout.consult_result_list, ocorrencias);
+//            ListOcorrenciaAdapter = new ArrayAdapter<String>(getApplication(), android.R.layout.simple_list_item_1, lstEstados);
 
 
 
